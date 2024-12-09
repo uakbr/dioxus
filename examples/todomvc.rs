@@ -3,7 +3,7 @@
 use dioxus::prelude::*;
 use std::collections::HashMap;
 
-const STYLE: Asset = asset!("/examples/assets/todomvc.css");
+const STYLE: &str = include_str!("../examples/assets/todomvc.css");
 
 fn main() {
     dioxus::launch(app);
@@ -63,7 +63,9 @@ fn app() -> Element {
     };
 
     rsx! {
-        document::Link { rel: "stylesheet", href: STYLE }
+        style {
+            {STYLE}
+        }
         section { class: "todoapp",
             TodoHeader { todos }
             section { class: "main",

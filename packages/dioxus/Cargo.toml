@@ -23,6 +23,9 @@ dioxus-router = { workspace = true, optional = true }
 dioxus-web = { workspace = true, default-features = false, optional = true }
 dioxus-mobile = { workspace = true, optional = true }
 dioxus-desktop = { workspace = true, default-features = true, optional = true }
+dioxus-native = { workspace = true, default-features = true, optional = true }
+# dioxus-native = { path = "../../../blitz/packages/dioxus-native", default-features = true, optional = true }
+# dioxus-native = { git = "https://github.com/DioxusLabs/blitz/packages/dioxus-native", rev = "16b5991f88", default-features = true, optional = true }
 dioxus-fullstack = { workspace = true, default-features = true, optional = true }
 dioxus-liveview = { workspace = true, optional = true }
 dioxus-ssr = { workspace = true, optional = true }
@@ -55,6 +58,7 @@ router = ["dep:dioxus-router"]
 # Platforms
 fullstack = ["dep:dioxus-fullstack", "dioxus-config-macro/fullstack", "dep:serde"]
 desktop = ["dep:dioxus-desktop", "dioxus-fullstack?/desktop", "dioxus-config-macro/desktop"]
+native = ["dep:dioxus-native", "dioxus-config-macro/native"]
 mobile = ["dep:dioxus-mobile", "dioxus-fullstack?/mobile", "dioxus-config-macro/mobile"]
 web = ["dep:dioxus-web", "dioxus-fullstack?/web", "dioxus-config-macro/web", "dioxus-cli-config", "dioxus-cli-config/web"]
 ssr = ["dep:dioxus-ssr", "dioxus-config-macro/ssr"]

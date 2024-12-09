@@ -34,6 +34,7 @@ members = [
     "packages/devtools-types",
     "packages/devtools",
     "packages/dioxus-lib",
+    "packages/native",
     "packages/dioxus",
     "packages/document",
     "packages/extension",
@@ -123,6 +124,7 @@ dioxus-web = { path = "packages/web", version = "0.6.0", default-features = fals
 dioxus-isrg = { path = "packages/isrg", version = "0.6.0" }
 dioxus-ssr = { path = "packages/ssr", version = "0.6.0", default-features = false }
 dioxus-desktop = { path = "packages/desktop", version = "0.6.0", default-features = false }
+dioxus-native = { path = "packages/native", version = "0.0.0", default-features = false }
 dioxus-mobile = { path = "packages/mobile", version = "0.6.0" }
 dioxus-interpreter-js = { path = "packages/interpreter", version = "0.6.0" }
 dioxus-liveview = { path = "packages/liveview", version = "0.6.0" }
@@ -337,6 +339,7 @@ liveview = ["dioxus/liveview"]
 fullstack = ["dioxus/fullstack"]
 server = ["dioxus/server"]
 mobile = ["dioxus/mobile"]
+native = ["dioxus/native"]
 web = ["dioxus/web"]
 http = ["dep:reqwest", "dep:http-range"]
 gpu = ["dep:ouroboros", "dep:wgpu"]

@@ -200,7 +200,14 @@ mod current_platform {
     pub use dioxus_fullstack::server::launch::*;
 
     #[cfg(all(
+        feature = "native",
+        not(all(feature = "fullstack", feature = "server"))
+    ))]
+    pub use dioxus_native::launch_generic as launch;
+
+    #[cfg(all(
         feature = "desktop",
+        not(feature = "native"),
         not(all(feature = "fullstack", feature = "server"))
     ))]
     pub use dioxus_desktop::launch::*;
@@ -208,6 +215,7 @@ mod current_platform {
     #[cfg(all(
         feature = "mobile",
         not(feature = "desktop"),
+        not(feature = "native"),
         not(all(feature = "fullstack", feature = "server"))
     ))]
     pub use dioxus_mobile::launch_bindings::*;
@@ -217,6 +225,7 @@ mod current_platform {
         not(all(feature = "fullstack", feature = "server")),
         not(all(feature = "server")),
         not(feature = "desktop"),
+        not(feature = "native"),
         not(feature = "mobile"),
     ))]
     pub fn launch(
@@ -232,6 +241,7 @@ mod current_platform {
         not(all(feature = "fullstack", feature = "server")),
         not(all(feature = "server")),
         not(feature = "desktop"),
+        not(feature = "native"),
         not(feature = "mobile"),
         not(feature = "web"),
     ))]
