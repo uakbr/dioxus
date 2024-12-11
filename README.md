@@ -1,73 +1,3 @@
-<p>
-    <p align="center" >
-      <!-- <img src="./notes/header-light-updated.svg#gh-light-mode-only" >
-      <img src="./notes/header-dark-updated.svg#gh-dark-mode-only" > -->
-      <!-- <a href="https://dioxuslabs.com">
-          <img src="./notes/flat-splash.avif">
-      </a> -->
-      <img src="./notes/splash-header-darkmode.svg#gh-dark-mode-only" style="width: 80%; height: auto;">
-      <img src="./notes/splash-header.svg#gh-light-mode-only" style="width: 80%; height: auto;">
-      <img src="./notes/image-splash.avif">
-      <br>
-    </p>
-</p>
-<div align="center">
-  <!-- Crates version -->
-  <a href="https://crates.io/crates/dioxus">
-    <img src="https://img.shields.io/crates/v/dioxus.svg?style=flat-square"
-    alt="Crates.io version" />
-  </a>
-  <!-- Downloads -->
-  <a href="https://crates.io/crates/dioxus">
-    <img src="https://img.shields.io/crates/d/dioxus.svg?style=flat-square"
-      alt="Download" />
-  </a>
-  <!-- docs -->
-  <a href="https://docs.rs/dioxus">
-    <img src="https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square"
-      alt="docs.rs docs" />
-  </a>
-  <!-- CI -->
-  <a href="https://github.com/jkelleyrtp/dioxus/actions">
-    <img src="https://github.com/dioxuslabs/dioxus/actions/workflows/main.yml/badge.svg"
-      alt="CI status" />
-  </a>
-
-  <!--Awesome -->
-  <a href="https://dioxuslabs.com/awesome">
-    <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Page" />
-  </a>
-  <!-- Discord -->
-  <a href="https://discord.gg/XgGxMSkvUM">
-    <img src="https://img.shields.io/discord/899851952891002890.svg?logo=discord&style=flat-square" alt="Discord Link" />
-  </a>
-</div>
-
-<div align="center">
-  <h3>
-    <a href="https://dioxuslabs.com"> Website </a>
-    <span> | </span>
-    <a href="https://github.com/DioxusLabs/dioxus/tree/main/examples"> Examples </a>
-    <span> | </span>
-    <a href="https://dioxuslabs.com/learn/0.6/guide"> Guide </a>
-    <span> | </span>
-    <a href="https://github.com/DioxusLabs/dioxus/blob/main/translations/zh-cn/README.md"> 中文 </a>
-    <span> | </span>
-    <a href="https://github.com/DioxusLabs/dioxus/blob/main/translations/pt-br/README.md"> PT-BR </a>
-    <span> | </span>
-    <a href="https://github.com/DioxusLabs/dioxus/blob/main/translations/ja-jp/README.md"> 日本語 </a>
-    <span> | </span>
-    <a href="https://github.com/DioxusLabs/dioxus/blob/main/translations/tr-tr"> Türkçe </a>
-    <span> | </span>
-    <a href="https://github.com/DioxusLabs/dioxus/blob/main/translations/ko-kr"> 한국어 </a>
-  </h3>
-</div>
-<br>
-<p align="center">
-  <a href="https://dioxuslabs.com/blog/release-060/">✨ Dioxus 0.6 is released - check it out here! ✨</a>
-</p>
-<br>
-
 Build for web, desktop, and mobile, and more with a single codebase. Zero-config setup, integrated hot-reloading, and signals-based state management. Add backend functionality with Server Functions and bundle with our CLI.
 
 ```rust
@@ -125,18 +55,6 @@ We've put a ton of effort into building clean, readable, and comprehensive docum
 <div align="center">
   <img src="./notes/docs.avif">
 </div>
-
-## Community
-
-Dioxus is a community-driven project, with a very active [Discord](https://discord.gg/XgGxMSkvUM) and [GitHub](https://github.com/DioxusLabs/dioxus/issues) community. We're always looking for help, and we're happy to answer questions and help you get started. [Our SDK](https://github.com/DioxusLabs/dioxus-std) is community-run and we even have a [GitHub organization](https://github.com/dioxus-community/) for the best Dioxus crates that receive free upgrades and support.
-
-<div align="center">
-  <img src="./notes/dioxus-community.avif">
-</div>
-
-## Full-time core team
-
-Dioxus has grown from a side project to a small team of fulltime engineers. Thanks to the generous support of FutureWei, Satellite.im, the GitHub Accelerator program, we're able to work on Dioxus full-time. Our long term goal is for Dioxus to become self-sustaining by providing paid high-quality enterprise tools. If your company is interested in adopting Dioxus and would like to work with us, please reach out!
 
 ## Supported Platforms
 
@@ -306,24 +224,3 @@ Dioxus and Electron are two entirely different projects with similar goals. Elec
 - **Lightweight**: Dioxus uses the system's native WebView - or optionally, a WGPU renderer - to render the UI. This makes a typical Dioxus app about 15mb on macOS in comparison to Electron's 100mb. Electron also ships an embedded chromium instance which cannot share system resources with the host OS in the same way as Dioxus.
 
 - **Maturity**: Electron is a mature project with a large community and a lot of tooling. Dioxus is still quite young in comparison to Electron. Expect to run into features like deep-linking that require extra work to implement.
-
-## Contributing
-
-- Check out the website [section on contributing](https://dioxuslabs.com/learn/0.6/contributing).
-- Report issues on our [issue tracker](https://github.com/dioxuslabs/dioxus/issues).
-- [Join](https://discord.gg/XgGxMSkvUM) the discord and ask questions!
-
-<a href="https://github.com/dioxuslabs/dioxus/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=dioxuslabs/dioxus&max=30&columns=10" />
-</a>
-
-## License
-
-This project is licensed under either the [MIT license] or the [Apache-2 License].
-
-[apache-2 license]: https://github.com/DioxusLabs/dioxus/blob/master/LICENSE-APACHE
-[mit license]: https://github.com/DioxusLabs/dioxus/blob/master/LICENSE-MIT
-
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in Dioxus by you, shall be licensed as MIT or Apache-2, without any additional
-terms or conditions.
